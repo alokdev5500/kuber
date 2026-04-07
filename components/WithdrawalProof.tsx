@@ -24,16 +24,16 @@ const WithdrawalProof = () => {
       <div className="container mx-auto px-6">
         
         {/* Header & Leaderboard */}
-        <div className="grid lg:grid-cols-2 gap-20 mb-24 items-center">
-          <div className="flex flex-col gap-8">
+        <div className="grid lg:grid-cols-2 gap-16 md:gap-20 mb-16 md:mb-24 items-center">
+          <div className="flex flex-col gap-6 md:gap-8 text-center lg:text-left">
             <motion.div 
                initial={{ opacity: 0, x: -20 }}
                whileInView={{ opacity: 1, x: 0 }}
                viewport={{ once: true }}
-               className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-border shadow-sm w-fit"
+               className="inline-flex items-center gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-white rounded-full border border-border shadow-sm w-fit mx-auto lg:mx-0"
             >
-              <Trophy size={16} className="text-primary fill-primary/20" />
-              <span className="text-[12px] font-black uppercase tracking-widest text-foreground">Top Earner Today: ₹1,240</span>
+              <Trophy size={14} className="text-primary fill-primary/20 md:size-[16px]" />
+              <span className="text-[10px] md:text-[12px] font-black uppercase tracking-widest text-foreground">Top Earner Today: ₹1,240</span>
             </motion.div>
 
             <motion.h2 
@@ -41,7 +41,7 @@ const WithdrawalProof = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-5xl md:text-7xl font-black tracking-apple text-foreground leading-[1.1]"
+              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-apple text-foreground leading-[1.1]"
             >
               Yes, we <span className="text-primary italic">actually</span> pay.
             </motion.h2>
@@ -51,14 +51,14 @@ const WithdrawalProof = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="flex items-center gap-4 bg-primary text-white p-6 rounded-apple shadow-2xl w-fit"
+              className="flex items-center gap-4 bg-primary text-white p-5 md:p-6 rounded-[24px] md:rounded-apple shadow-2xl w-fit mx-auto lg:mx-0"
             >
-              <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                <Wallet size={24} />
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Wallet className="w-5 h-5 md:w-6 md:h-6" />
               </div>
-              <div>
-                <p className="text-2xl font-black tracking-tight leading-none">$1 Minimum Withdrawal</p>
-                <p className="text-white/80 font-bold mt-1 text-sm">Lowest in the industry. Withdraw anytime.</p>
+              <div className="text-left">
+                <p className="text-lg md:text-2xl font-black tracking-tight leading-none">$1 Minimum Withdrawal</p>
+                <p className="text-white/80 font-bold mt-1 text-[10px] md:text-sm">Lowest in the industry. Withdraw anytime.</p>
               </div>
             </motion.div>
           </div>
@@ -72,7 +72,7 @@ const WithdrawalProof = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-white p-5 rounded-2xl border border-border flex items-center justify-between group cursor-default hover:shadow-lg transition-all"
+                className="bg-white p-4 md:p-5 rounded-2xl border border-border flex items-center justify-between group cursor-default hover:shadow-lg transition-all"
               >
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 bg-green-50 rounded-full flex items-center justify-center">

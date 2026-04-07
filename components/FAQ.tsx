@@ -38,31 +38,31 @@ const FAQ = () => {
     <section id="faq" className="py-40 bg-zinc-50 overflow-hidden">
       <div className="container mx-auto px-6">
         
-        <div className="grid lg:grid-cols-2 gap-20 items-start">
+        {/* Header Area */}
+        <div className="grid lg:grid-cols-2 gap-16 md:gap-20 items-start">
           
-          {/* Header Area */}
-          <div className="flex flex-col gap-8 sticky top-32">
-            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm border border-border">
-               <HelpCircle className="text-primary w-8 h-8" />
+          <div className="flex flex-col gap-6 md:gap-8 lg:sticky lg:top-32 text-center lg:text-left">
+            <div className="w-14 h-14 md:w-16 md:h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm border border-border mx-auto lg:mx-0">
+               <HelpCircle className="text-primary w-6 h-6 md:w-8 md:h-8" />
             </div>
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-5xl lg:text-7xl font-black tracking-apple text-foreground leading-tight"
+              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-apple text-foreground leading-tight"
             >
               Common <br />
               Questions.
             </motion.h2>
-            <p className="text-xl text-muted font-medium max-w-sm">
+            <p className="text-lg md:text-xl text-muted font-medium max-w-sm mx-auto lg:mx-0">
               Everything you need to know about starting your earning journey with My Kuber.
             </p>
-            <div className="h-px bg-border my-4" />
-            <div className="flex items-center gap-4">
-               <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <MessageCircle size={20} className="text-primary" />
+            <div className="h-px bg-border my-2 md:my-4" />
+            <div className="flex items-center gap-3 md:gap-4 justify-center lg:justify-start">
+               <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <MessageCircle size={16} className="text-primary" />
                </div>
-               <p className="font-bold text-foreground">Still have questions? <span className="text-primary underline cursor-pointer">Chat with support</span></p>
+               <p className="font-bold text-foreground text-sm md:text-base">Still have questions? <span className="text-primary underline cursor-pointer">Chat with support</span></p>
             </div>
           </div>
 

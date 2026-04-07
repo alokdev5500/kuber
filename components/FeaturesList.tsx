@@ -31,7 +31,7 @@ const FeaturesList = () => {
   return (
     <section id="features" className="py-40 bg-white">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -39,16 +39,16 @@ const FeaturesList = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className="flex flex-col items-start gap-6"
+              className="flex flex-col items-start gap-5 md:gap-6"
             >
-              <div className="w-16 h-16 bg-secondary rounded-[24px] flex items-center justify-center shadow-sm border border-border">
-                {feature.icon}
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-secondary rounded-[20px] md:rounded-[24px] flex items-center justify-center shadow-sm border border-border">
+                <div className="scale-90 md:scale-100">{feature.icon}</div>
               </div>
               <div className="flex flex-col gap-3">
-                <h3 className="text-2xl font-black tracking-apple text-foreground">
+                <h3 className="text-xl md:text-2xl font-black tracking-apple text-foreground">
                   {feature.title}
                 </h3>
-                <p className="text-muted text-lg font-medium leading-tight">
+                <p className="text-muted text-base md:text-lg font-medium leading-tight">
                   {feature.description}
                 </p>
               </div>

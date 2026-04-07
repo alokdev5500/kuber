@@ -36,14 +36,13 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div className="flex flex-col gap-8">
             <h4 className="text-[12px] font-black uppercase tracking-[0.3em] text-foreground/40">Platform</h4>
             <div className="flex flex-col gap-5">
-              <Link href="#" className="text-lg font-bold text-muted hover:text-foreground transition-colors">How it Works</Link>
-              <Link href="#" className="text-lg font-bold text-muted hover:text-foreground transition-colors">Earning Model</Link>
-              <Link href="#" className="text-lg font-bold text-muted hover:text-foreground transition-colors">Creator Program</Link>
-              <Link href="#" className="text-lg font-bold text-muted hover:text-foreground transition-colors">Live Leaderboard</Link>
+              <Link href="#how-it-works" className="text-lg font-bold text-muted hover:text-foreground transition-colors">How it Works</Link>
+              <Link href="#earning-model" className="text-lg font-bold text-muted hover:text-foreground transition-colors">Earning Model</Link>
+              <Link href="#catalog" className="text-lg font-bold text-muted hover:text-foreground transition-colors">Catalog Preview</Link>
+              <Link href="#withdraw" className="text-lg font-bold text-muted hover:text-foreground transition-colors">Live Leaderboard</Link>
             </div>
           </div>
 
