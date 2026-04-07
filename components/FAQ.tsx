@@ -63,7 +63,7 @@ const FAQ = () => {
                   <MessageCircle size={16} className="text-primary" />
                </div>
                <p className="font-bold text-foreground text-sm md:text-base">Still have questions? <span className="text-primary underline cursor-pointer">Chat with support</span></p>
-            </div>
+            </div> 
           </div>
 
           {/* Accordion List */}
